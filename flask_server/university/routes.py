@@ -6,7 +6,7 @@ from io import BytesIO
 
 @app.route("/")
 def hello_world():
-    # db.create_all()
+    db.create_all()
     return render_template('home.html')
 
 
